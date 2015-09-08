@@ -1,0 +1,28 @@
+{
+  "name": "treeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-jasmine": "^0.3.6",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-requirejs": "^0.2.2",
+    "phantomjs": "^1.9.18",
+    "requirejs": "^2.1.20"
+  },
+  "devDependencies": {
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-requirejs": "^0.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

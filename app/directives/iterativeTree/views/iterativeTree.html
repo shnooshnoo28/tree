@@ -1,0 +1,13 @@
+<ul>
+    <li ng-repeat="(k, item) in parsedItems track by $index">
+        <div class="indent" ng-repeat="n in [] | range:item.depth"></div>
+        <span contenteditable="true" ng-model="item.name">{{item.name}}</span>
+        <span class="plus-button" ng-click="add(k, item)">Add child</span>
+        <span class="minus-button" ng-click="delete($index, item)">Delete node</span>
+    </li>
+</ul>
+<div class="buttons-container">
+    <span class="plus-button" ng-click="addRoot();">Add root item</span>
+    <span class="plus-button" ng-click="save();">Save to local storage</span>
+    <span class="plus-button" ng-click="load();">Load from local storage</span>
+</div>

@@ -1,0 +1,51 @@
+#content{
+	margin: 20px;
+	padding: 20px 20px 20px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+li{
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+.plus-button, .minus-button{
+	color: #00C300;
+	border: 1px solid #00C300;
+	border-radius: 6px;
+	display: inline-block;
+	padding: 0 4px;
+	height: 13px;
+	line-height: 13px;
+	font-size: 9px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.minus-button {
+	color: #B10101;
+	border: 1px solid #B10101;
+}
+
+.plus-icon{
+	cursor: pointer;
+	-webkit-transition: 0.1s linear;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+}
+
+.opened-plus{
+	transform: rotate(45deg);
+}
+
+.indent {
+    display: inline-block;
+    width: 40px;
+}
+
+.buttons-container{
+	padding-left: 40px;
+}

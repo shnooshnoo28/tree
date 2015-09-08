@@ -1,0 +1,18 @@
+<script type="text/ng-template"  id="item-template.html">
+    <img ng-class="{'opened-plus': item.showChildren}" src="app/styles/img/plus.png" class="plus-icon"
+         width="10" height="10" ng-if="item.childNodes.length > 0" ng-click="item.showChildren = !item.showChildren"/>
+    <span contenteditable="true" ng-model="item.name">{{item.name}}</span>
+    <span class="plus-button" ng-click="add(item)">Add child</span>
+    <span class="minus-button" ng-click="delete($index, $parent.$parent.$parent.item, parsedItems)">Delete node</span>
+    <ul>
+        <li ng-repeat="item in item.childNodes" ng-include="'item-template.html'" ng-show="$parent.$parent.$parent.item.showChildren"></li>
+    </ul>
+</script>
+<ul>
+    <li ng-repeat="(k, item) in parsedItems" ng-include="'item-template.html'"></li>
+</ul>
+<div class="buttons-container">
+    <span class="plus-button" ng-click="addRoot();">Add root item</span>
+    <span class="plus-button" ng-click="save();">Save to local storage</span>
+    <span class="plus-button" ng-click="load();">Load from local storage</span>
+</div>
